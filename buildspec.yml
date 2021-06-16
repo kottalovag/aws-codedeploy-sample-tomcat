@@ -3,7 +3,8 @@ version: 0.1
 phases:
   build:
     commands:
-      - echo Build completed on `date`
+      - echo Build started on `date`
+      - git log -1
       - mvn package
 
 artifacts:
